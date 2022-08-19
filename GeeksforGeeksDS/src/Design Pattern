@@ -1,0 +1,9 @@
+Signleton Pattern : Create only one instance , which can be used by different classes .
+For example : Property file is read by class called propertyReader , which should be instantiated once .
+
+Factory Pattern : Creational Pattern , which hides object creation process .
+For Example Driver class which connects to different databases (oracle,sqlserver etc )
+
+Abstract Factory : factory of foctories
+
+Template :

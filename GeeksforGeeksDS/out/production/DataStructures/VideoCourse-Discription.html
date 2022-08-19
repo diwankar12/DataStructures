@@ -1,0 +1,450 @@
+
+============= Backtracking ===========
+
+When there are many possibilities from given element and the answers could be many possible
+
+===========Greedy============
+
+
+==========Sorting=========
+
+Bubble sort : we swap element in pass . if we have n elements in a array the pass will be n-1
+basically we swap elements in each pass . Two loops one for pass and other for internal swapping
+O(n2)
+
+Selection sort : like heap sort , find the min element and put it at the first position .
+in place algorithm
+theta(n^2)
+
+insertion sort : in place and stable . Good for small sized array .
+ idea: take first element which is sorted and run loop from i=1 to end of array .
+ Try to add the key into the sorted array . Worst case O(n^2) and best case O(n).
+
+
+
+=======================================
+
+Video 6:
+      (1st half) HashMap
+      (2nd Half) String
+         1. Anagrams - Use hashmap to get the frequency
+         2. Change a string in minimum step to anagram (hashmap)
+         3. Check if string s2 is subsequence of s1 (two pointer approach)
+         4. Given 2 strings s1 & s2 of same length . Check if s1 is a rotation of s2 or not :
+            merge s1 + s1 and then find s2 in new string
+
+Video 7 : LinkedList - insertion and deletion of SLL
+Video 9 : Continuation of Linked List
+
+   1. Slow(take 1 steps) and fast pointer(take 2 steps ) approach - find middle element of the SLL and detect cycle;
+   2. Two pointer one to move k point until other move : delete the Kth element from the end of the SLL
+   3. Detect Cycle or loop (Floyd's cycle detection)
+          a. find loop : fast and slow pointer
+          b. Find size of the loop : save the point where they meet and do one more round to
+             find the size of the loop
+          c. Find head : Move one pointer to the size of the loop , and then traverse other pointer parallel ,
+             same as Kth element from end problem
+   4. LRU cache - using doubly linked list and hashmap . HashMap will key as number and value as reference in DLL .
+                  put : we will insert at the head and delete at the tail . We need to check first if the capacity of the DLL
+                  If it is hashmap , move it to front and update the hashMap address
+                  get operation : move the element at the head and delete the previous position and update the hashmap
+
+
+
+Video: 10
+
+   1. Merge sorted linked list (Recursive and iterative approach)
+       Recursive approach :
+       Iterative Approach :
+
+   2. Bits manipulation
+
+Video 11 part 1
+      1. Stacks - Infix (need to look again)
+      2. queue
+
+
+Video 11 part 2
+       1. stacks
+          a. Design stack for push,pop and get current minimum
+          b. nearest greater element on left side for each element
+          c. Histogram
+          d. Checking balance parenthesis
+
+Video 12
+      Binary Trees
+        1. find max depth or height of a binary trees
+        2. DFS traversal : Pre , post and inorder traversal
+        3. BFS or level order traversal using queue - space complex : O(width of tree)
+        4. Sum of maximum root to leaf path
+           go to the end of the node and then traverse upward ,
+           find max between left node and right node if exits
+           ******code snippet*******
+           int maxPath(Tree root){
+           if(root==null) return 0;
+           int leftPath = maxPath(root.left);
+           int rightPath = maxPath(root.right);
+           return Math.max(leftPath,rightPath) + root.data ;
+
+          }
+        5. Sum of maximum root to any node (for n node there can be n-1 possibilities)
+            ***** check in algo package of binary tree *******
+            int maxPath(Tree root){
+            if(root==null) return 0;
+            int leftPath = maxPath(root.left);
+            int rightPath = maxPath(root.right);
+            return Math.max(Math.max(leftPath, rightPath )+ root.data , root.data) ;
+
+            }
+
+        6. max sum path in a binary tree
+
+            if(root==null) return 0 ;
+            int left = maxPathSumRec(root.left,ans);
+            int right = maxPathSumRec(root.right,ans);
+            int returnedVal =  Math.max(Math.max(left+root.value,right+root.value),root.value);
+            int topMax = Math.max(left+right+root.value,returnedVal);
+            ans[0] = Math.max(topMax,ans[0]);
+            return returnedVal ;
+
+           We need to consider four paths . Check code in algo expert
+        7. Print all the nodes at K distance from the root
+           see algo expert
+        8. Children sum property
+        9. Diameter in a binary tree
+
+
+
+
+
+Video 13
+      Binary Search Trees
+      1.
+        <B>a.Insert -O(h) </B>
+
+         b.search -O(h)
+          <code>boolean searchBST(Node root,int x){
+          if(root==null) return false ;
+          if(root.data==x)
+                return true ;
+          if(root.data<x)
+               return searchBST(root.right,x);
+            return searchBST(root.left,x)
+
+              }</code>
+
+
+
+      2. Left subtree is smaller than right subtree
+      3.Inorder traversal in BST gives sorted order
+      4. QUES) Given a BST, find the nextGreaterElementForGivenX - Inorder Successor
+
+
+
+     IMP NOTE : Leftmost has the min element in the BST and rightmost is the max element
+     case 1 :
+     case 2 :
+
+
+      5.QUES) Deletion in BST :
+          case 1: no children - directly delete it
+          case 2: one children - take child to their parent
+          case 3 : find inorder successor/predecessor and then replace it with the element and then delete it
+                   by using case 1 or case 2 .
+
+      5. QUES) Given a binary tree , check whether it is BST or not ? We need to check in the range [-INF ,+INF]
+          if we go right then it would be [r,+INF] and for left [-INF,r]
+
+      6. QUES) Recover BST | Correct BST with two nodes swapped
+
+      7. AVL trees are balanced binary search trees , which does rotations , if it gets disturbed .
+
+      JAVA INTERNAL LIB : Self balancing BST has TreeMap and TreeSet ;
+      All BST is measured in O(logn)
+
+
+
+Video 14
+   complete binary tree is called as binary heap , where each node satisfies heap property
+   Binary Heap : for any node whose index is 'i' , left child = 2*i+1 and right child 2*i+2
+                 for any node whose index is 'i' , its parent will be (i-1)/2
+    Binary Heap have two parts Max Heap and min Heap .
+    Max heap
+       1. Max element is always at the top .
+       2. We need to adjust the new element so that it follows heap rule , i.e parent is always bigger than child
+          The process is called heapify or sift up
+
+          a. getMax() - O(1)
+          b. Insert() - O(logn) - sift up
+          c. delete() -  O(logn) - siftDown (Swap current node witgh largest child , if it is smaller than largest child)
+
+       3. Heap Sort : O(nlogn)
+
+
+     Min heap
+
+     Priority_Queue :
+
+     Build Heap :  O(n) , space : O(1)
+
+     Questions : 1. Merge K sorted Array
+                 2. Running stream median
+                 3. Sort a nearly sorted array
+
+     ======= Algo Expert Heap Theory ===========
+
+     Build Heap : using sift down method .
+     insert : Using sift up method . Add a value at the last node and then compare with parent
+              until the heap property is achieved .
+      remove: Using sift down . When we remove a element from any node , it has to be swapped from last element
+              Once it is swapped then the heap structure is broken . To make it a heap again , we compare parent and its
+              two children , whichever is minimum we swapped the value with it . Keep doing it until all the heap properties
+              is restored
+
+      Check siftDown and siftUp approach from algo expert
+
+Video 15 - GRAPH
+      Bidirectional graph with n vertices and n-1 edges without cycles is called Tree .
+      Directed Graph with n vertices and m edges has no cycle is called DAG .
+
+      Representation of the Graph :
+      1. By 2D matrix - Adjacency matrix - O(V^2)
+      2. ArrayList<ArrayList<Integer>> - adjacency List - O(V+E)
+
+      in a directed graph , dfs will not be able to visit all the vertices .
+      We will be using in loop to call DFS to overcome above issue .
+
+    DFS - use recursive call
+    BFS - use queue and same like tree traversal , we just need to carry a boolean visited array .
+
+    1. Min number of extra edges to make all the components into one
+       Ans : components - 1
+    2. Detect cycle in a undirected graph - using dfs and  we need to carry parent variable
+    <code>
+
+
+    </code>
+    2. Detect cycle in a directed graph
+         a. Using dfs approach - we need to carry boolean callStack and visited array
+             The edge which is responsible for cycle formation are called as back edge ,
+              which is only specific to DFS not BFS .
+
+    Topological Sorting : linear ordering of all the vertices such that every pair in order u and v
+
+         BFS based solution :
+                               1. Store indegree of every vertex
+                               2. Create a queue and add all 0 indegree vertices to the queue
+                               3. for every adjacent v of u
+                                   a. reduce indegree of v by 1
+                                   b. If indegree of v becomes 0 , add v to the queue .
+
+         DFS based solution :
+                                1. Create an empty stack
+                                2. For every vertex u ,
+                                     if(u is not visited) call DFS(u,st)
+                                3. While(st is not empty) pop all the element
+                                4. DFS(u,st)
+                                    1. mark u as visited
+                                    2. for every adjacent v of u ,
+                                            if v is not visited
+                                                DFS(v,st)
+                                    3. Push u to stack
+
+
+Video 15 -  PART 2 - GRAPH
+          Topo sort - is valid only for directed graph . NOT valid for graphs which has cycles .
+                     ONLY applicable for DAG .
+                     Indegree : no of nodes coming to a node is called indegree
+          NOTE : we can detect cycle using topo sort algorithm . Since the indegree of all the vertices will be one , it will never be 0
+                 As a result it is not pushed to queue . We can put the check if the toposort collected in the list is
+                 not equal to the vertices then it has cycle .
+
+          Topo sort questions
+                a. find the precedence of characters in the given sorted dictionary ? Alien dictionary
+                   Solution : Based on topo sort
+                b. Lexicograhically smallest topological ordering .
+                   Solution: use priority queue instead of queue
+
+          2D BFS/DFS problems
+               a. Count No of islands in 2D graph ? using DFS
+               b. Knight shortest path problem
+
+          Bonus Problem :
+
+===========================Dynamic Programming :====================================
+
+
+    One parameter can create one DS .
+    Tabulations - move from base case to required answer
+
+ --------Notes Links --------
+    https://takeuforward.org/data-structure/dynamic-programming-introduction/
+    https://takeuforward.org/data-structure/dynamic-programming-climbing-stairs/
+  ---------------------------
+
+    NOTES 2 lecture:
+
+    When we see a problem, it is very important to identify it as a dynamic programming problem. Generally (but not limited to) if the problem statement asks for the following:
+
+    Count the total number of ways
+    Given multiple ways of doing a task, which way will give the minimum or the maximum output.
+
+    Steps To Solve The Problem After Identification
+
+    Once the problem has been identified, the following three steps comes handy in solving the problem:
+
+            1.Try to represent the problem in terms of indexes.
+            2.Try all possible choices/ways at every index according to the problem statement.
+            3.If the question states
+                      a.Count all the ways – return sum of all choices/ways.
+                      b.Find maximum/minimum- return the choice/way with maximum/minimum output.
+
+
+   NOTES 3 (frog jump) :  https://takeuforward.org/data-structure/dynamic-programming-frog-jump-dp-3/
+
+
+
+ -----DP-11 --- Triangle Fixed starting point and variable ending point DP ON GRIDS ------------
+     Problem link : https://leetcode.com/problems/triangle/
+
+    Why not greedy approach ? No uniformity in data . All possible outcomes that's y recursion approach
+
+    Build recurrence tree ?
+           Concept
+              a. Try to see if we can make it in index , so starting point is fixed , we will start from
+                  f(0,0) rather than any ending point
+              b. Base case
+                   here we the destination is end of last row
+                   f(i,j){
+                    // base case
+                      if (i==n-1){
+                         do stuff
+                           return a[n-1][j];
+                         }
+                    }
+               c.
+
+-----------DP-12 -----------Minimum/Maximum Falling Path Sum | Variable Starting and Ending Points | DP on Grids---------
+    https://www.youtube.com/watch?v=N_aJ5qQbYA0&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=13
+
+
+        VERY IMP 1. When we have to find max values ,
+                    then we have some path which is crossing boundary , then return maximum value
+
+
+
+----------------dp 14/15--------------------
+    https://leetcode.com/problems/partition-equal-subset-sum/
+
+   coding == https://www.codingninjas.com/codestudio/problems/subset-sum-equal-to-k_1550954?leftPanelTab=0
+
+------------------dp16-----------------------------
+
+
+=========================== BackTracking notes =====================
+
+    Combination sum : we need to pick or not pick an element . Suppose we pick the element at particular index
+                      then it doesn't move to next index beacause it can be picked multiple times
+
+                       pseudo code :
+                          picking
+                                 add in ds // ds.add(arr[index])
+                                f(ds,index,target-array[index])
+                                 ds.remove(ds.size()-1)
+                           not picking
+                                f(ds,index+1,target)
+
+
+    Combination Sum 2 : When element can be picked only once
+                        then we need to do for loop , since there is chances of picking all element once
+
+
+
+
+==================================================
+<p>NOTE : Pass by value and Pass by reference <code>
+
+    Pass By value : when using primitive type to pass in the method then primitive value is copied .
+    Passing the value in the method and the value itself are different and they have different memory location
+
+    Pass by reference : When using complex objects like arraylist, array , then the same value is passed to the object
+
+</code> </p>
+
+==============================================
+    <B>RECURSION</B>
+    <p> functional - when something each functions when called return
+        Parametrized recursion
+        Multiple Recursion calls
+           1. subsequences
+
+         NOTE : template for backtracking / subssequences ALL printing
+         f(index,list){
+
+        if(index>=n) {
+           print(list)
+           return ;
+           }
+
+        list.add(arr[i]);
+        f(index+1,list);
+        list.remove();
+        f(index+1,list);
+
+        }
+
+        =================================
+        Technique to print only one answer
+            1. BASE case : condition statisfied return true else return false
+            2. if(f() == true ) return true ;
+            3. At end return false ;
+        f(index,list){
+
+        if(index>=n) {
+           print(list)
+           return true ;
+        } else {
+          return false
+        }
+
+        list.add(arr[i]);
+        if(f(index+1,list)){
+          return true ;}
+        list.remove();
+
+        if(f(index+1,list)){
+          return true ;
+        }
+
+        return false ;
+        }
+
+
+        ============================
+        TO print the count of the susquence
+
+        s = variable we are carrying
+        sum = is the total sum given
+
+
+        f(index,list){
+
+        if(index==n) {
+          if(s==sum){
+        return 1 ;
+        }
+          else {
+        return 0
+        }
+     }
+        list.add(arr[i]);
+        int l = f(index+1,list))
+        list.remove();
+
+        int r = if(f(index+1,list)){
+
+        return l+r  ;
+        }
+
+    </p>
+

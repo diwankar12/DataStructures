@@ -1,0 +1,73 @@
+
+
+1.Threads Manipulation
+1. Runnable Interface and thread class
+
+A class needs to implements runnable interface or extends thread class .
+
+2.Deamon thread and worker thread
+
+All thread are worker thread (main thread and worker threads )
+but the deamon thread are background thread which will interrupted  by jvm .
+
+3. Memory Management
+    Heap Memory - All the threads shared heap memory in the same processes . All the objects are stored in the heap memory
+    stack memory - each thread has its own stack memory .
+                   All the local variables , method calls and arguments are stored in stack memory
+
+Wait and Notify :
+
+Whenever a intrinsic locks happen , meaning same class with multiple synchronized blocks ,
+then wait and notify can be called for inter thread communication
+----see WaitAndNotify.class
+
+Reentrant locks are better than synchronized locks ,
+
+1. thread starvation (lock prevent thread starvation)
+2. We can check given lock is held or not with reentrant locks
+
+synchronized blocks have wait and notify
+Reentrant lock has await() and signal() .
+
+// basic format
+Lock lock = new ReentrantLock() ;
+Condition condition = lock.newCondition;
+
+
+void method(){
+// use try catch finally block always
+    lock.lock ;
+    // wirte all the things
+    condition.await(); or condition.signal();
+    lock.unlock();
+}
+
+
+------
+Multithreading Concepts
+
+volatile : it is stored in the main memory . it is not cached in stack memory
+deadlock and livelock : we can avoid dedlock by using lock's interface using tryLock() method .
+
+Atomic variables : They are thread safe same like volatile
+
+---------------
+Executors
+
+Executor framework reuse the thread very efficiently . It makes life easy b
+
+see the ppt
+
+newSingleThreadExecutor : single thread executes sequentially
+
+
+
+
+
+
+
+
+
+
+
+

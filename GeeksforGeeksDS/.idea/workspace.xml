@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a662c504-cbef-40f7-8d9e-390a774484dd" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1o71LpZjXFA4V0sZD6WnoFSVPA7" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.PermutationsOfString">
+    <configuration name="BFrog" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MyDp.OneDArray.BFrog" />
+      <module name="DataStructures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="MyDp.OneDArray.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MapSorting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MapSorting.MapSorting" />
+      <module name="DataStructures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="MapSorting.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PermutationsOfString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PermutationsOfString" />
+      <module name="DataStructures" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <module name="DataStructures" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TopologicalSortingUsingDFSWithoutNodeClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GRAPH.TOPOLOGICALSORT.DFS.TopologicalSortingUsingDFSWithoutNodeClass" />
+      <module name="DataStructures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GRAPH.TOPOLOGICALSORT.DFS.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.PermutationsOfString" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.MapSorting" />
+        <item itemvalue="Application.BFrog" />
+        <item itemvalue="Application.TopologicalSortingUsingDFSWithoutNodeClass" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a662c504-cbef-40f7-8d9e-390a774484dd" name="Default Changelist" comment="" />
+      <created>1612622761712</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1612622761712</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="340" y="210" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1652897619127">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="340" y="210" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.800/1280.0.1920.1080@0.0.1280.800" timestamp="1652897619127" />
+    <state x="340" y="210" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.800/1280.23.1920.1057@0.0.1280.800" timestamp="1652897412953" />
+    <state x="1960" y="166" key="#com.intellij.ide.util.MemberChooser" timestamp="1659312022107">
+      <screen x="1280" y="23" width="1920" height="989" />
+    </state>
+    <state x="453" y="116" key="#com.intellij.ide.util.MemberChooser/0.0.1280.800/1280.0.1920.1080@0.0.1280.800" timestamp="1658023910845" />
+    <state x="453" y="116" key="#com.intellij.ide.util.MemberChooser/0.0.1280.800@0.0.1280.800" timestamp="1656356047924" />
+    <state x="453" y="129" key="#com.intellij.ide.util.MemberChooser/0.23.1280.729/1280.23.1920.1057@0.23.1280.729" timestamp="1653348146322" />
+    <state x="1960" y="166" key="#com.intellij.ide.util.MemberChooser/0.23.1280.777/1280.23.1920.989@1280.23.1920.989" timestamp="1659312022107" />
+    <state width="1238" height="301" key="GridCell.Tab.0.bottom" timestamp="1658631274396">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="301" key="GridCell.Tab.0.bottom/0.0.1280.800/1280.0.1920.1080@0.0.1280.800" timestamp="1658631274396" />
+    <state width="1238" height="301" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1658517802530" />
+    <state width="1238" height="301" key="GridCell.Tab.0.center" timestamp="1658631274393">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="301" key="GridCell.Tab.0.center/0.0.1280.800/1280.0.1920.1080@0.0.1280.800" timestamp="1658631274393" />
+    <state width="1238" height="301" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1658517802528" />
+    <state width="1238" height="301" key="GridCell.Tab.0.left" timestamp="1658631274392">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="301" key="GridCell.Tab.0.left/0.0.1280.800/1280.0.1920.1080@0.0.1280.800" timestamp="1658631274392" />
+    <state width="1238" height="301" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1658517802526" />
+    <state width="1238" height="301" key="GridCell.Tab.0.right" timestamp="1658631274394">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="301" key="GridCell.Tab.0.right/0.0.1280.800/1280.0.1920.1080@0.0.1280.800" timestamp="1658631274394" />
+    <state width="1238" height="301" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1658517802529" />
+    <state width="1238" height="253" key="GridCell.Tab.1.bottom" timestamp="1654205306539">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="253" key="GridCell.Tab.1.bottom/0.0.1280.800/1280.0.1920.1080@0.0.1280.800" timestamp="1654205306539" />
+    <state width="1238" height="253" key="GridCell.Tab.1.center" timestamp="1654205306532">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="253" key="GridCell.Tab.1.center/0.0.1280.800/1280.0.1920.1080@0.0.1280.800" timestamp="1654205306532" />
+    <state width="1238" height="253" key="GridCell.Tab.1.left" timestamp="1654205306530">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="253" key="GridCell.Tab.1.left/0.0.1280.800/1280.0.1920.1080@0.0.1280.800" timestamp="1654205306530" />
+    <state width="1238" height="253" key="GridCell.Tab.1.right" timestamp="1654205306535">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="253" key="GridCell.Tab.1.right/0.0.1280.800/1280.0.1920.1080@0.0.1280.800" timestamp="1654205306535" />
+    <state x="1492" y="53" key="SettingsEditor" timestamp="1658972323430">
+      <screen x="1280" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1492" y="53" key="SettingsEditor/0.0.1280.800/1280.0.1920.1080@1280.0.1920.1080" timestamp="1658972323430" />
+    <state x="141" y="39" key="SettingsEditor/0.0.1280.800/1280.23.1920.1057@0.0.1280.800" timestamp="1656031825046" />
+    <state x="317" y="232" key="com.intellij.ide.util.TipDialog" timestamp="1653687767219">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="317" y="232" key="com.intellij.ide.util.TipDialog/0.0.1280.800/1280.0.1920.1080@0.0.1280.800" timestamp="1653687767219" />
+    <state x="1669" y="237" key="new project wizard" timestamp="1659390006618">
+      <screen x="1280" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1669" y="237" key="new project wizard/0.0.1280.800/1280.0.1920.1080@1280.0.1920.1080" timestamp="1659390006618" />
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1656032533570">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800/1280.0.1920.1080@0.0.1280.800" timestamp="1656032533570" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/algoExpert/Array/LongestPeak.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/algoExpert/Searching/SearchInSortedMatrix.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

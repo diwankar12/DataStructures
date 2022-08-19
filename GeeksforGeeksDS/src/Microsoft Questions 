@@ -1,0 +1,54 @@
+1.https://leetcode.com/problems/flatten-binary-tree-to-linked-list/solution/
+
+2.Write code to represent company. 1 CEO, managers, employees, etc. A manager has a list of reports(people who work under him). Write a function to return list of all people who work under a particular manager, directly and indirectly.
+
+3.https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
+
+4.Design K-V store where if you attempt to retrieve a key that isn't in the data structure, insert it with the value of the average of the 2 closest keys.
+ex.
+insert(4, 4)
+insert (99, 10)
+insert(102, 20)
+insert(180, 99)
+Now the data strucure has the above 4 K-V pairs. get(99) = 10, get(102) = 20, etc.
+
+get(100) = 15.
+The closest 2 keys to the key of 100 are 99 and 102. Their corresponding values are 10 and 20 respectively. avg(10,20) = 15. Now the data structure contains the K-V pair (100, 15)
+
+5. Given an unsorted integer array find the indices of the two integers such that Arr[j] > Arr[i] and i< j. Can someone provide a solution for this in java ?
+
+   Input : {7,9,5,6,3,2}
+   Output: 2
+
+   Input: {Integer.MIN_VALUE, Integer.MAX_VALUE}
+
+6.Design in memory data structure to store the data like excel sheet in rows and columns.
+
+  Data is generic (can be int, string, bool..) and has properties like font type, size, bold,italics.
+  User can add more rows and columns at the end
+  User can also insert rows and columns in between existing rows/columns.
+
+  This was asked in Round 2 of microsoft interview.
+  Any ideas how to approach this problem ??
+
+7.   You are given a binary search tree where every node has a character and int.
+     Level0: G:4(root)
+     Level1: E:8(root->left) H:5 (root->right)
+     Level2: D:10(root->left->left) F:12(root->left->right)
+
+     How will you insert element into This tree. You have to maintain BST property for Character and min heap property for value.
+
+     Question:
+     You are given a 1-D array { 1,2,3,4,5,6,7,8,9,10}
+     Take N/2 and arrange elements alternatively in O(n) and O(1)
+     Output: 1,6,2,7,3,8,4,9,5,10
+
+8. Given an array A of size N. Find the maximum subset-sum of elements that you can make from the given array such that for every two consecutive elements in the array, at least one of the elements is present in our subset.
+   Input: N = 4, A[] = {1,-1,3,4}
+   Output: 8
+   Explanation: We can choose 1st, 3rd and 4th index, you can check that this is maximum possible sum.
+
+   Can aynone please :) solve this problem using recursion + memoization?
+
+9.    Longest common substring
+10 .  Maximum product subarray

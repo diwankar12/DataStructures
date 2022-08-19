@@ -1,0 +1,32 @@
+
+What is UDM
+
+UDM is a product that monitors the quite period between the time of original credit file pull and the closing of the loan .
+Solution is always on which means borrower files are continously monitored and daily alerts are send to lenders and resellers .
+of activity that may represent potential risk assosicated with mortgage loans in their pipelines .With this information,
+lenders/resellers can promtly communicate with borrowers regarding specific activities during the underwriting process .
+
+
+
+UDM NPI - webhook notifications
+
+report ?
+
+
+
+---------------------------------------------------------------------
+What is CDS -
+
+     Provide consumer consented bank or utility data to let our clients make loan approval
+     decisions of thin file consumers.
+
+     We get consumer information from the clients . Consumer's data is gathered from the banks and utility companies via
+     data aggregators (Yodlee, urjanet) after getting consumer consent . This data is enriched by adding more attributes by using models .
+     Data is delivered as pdf reports
+
+     Embedded flow - where the consumer gives consent triggered by the UI from client . Once consumer consent , then it is
+     redirected to a screen he can select fin institutes and bank accounts to be shared with clients/lenders .
+
+Architecture :
+
+report type ?
